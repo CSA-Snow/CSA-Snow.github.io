@@ -20,12 +20,12 @@ section.top {
     padding:0px;
     font-family: 'Great Vibes', cursive;
     font-size:130%;
-    color: darkslateblue;
+    color: darkblue;
 }
 h1, h2, h3 {
     font-family: 'Great Vibes', cursive;
     font-size:150%;
-    color: darkslateblue;
+    color: darkblue;
     text-align: center;
 }
 hr {
@@ -40,14 +40,14 @@ section.about img{
     border-radius: 0px 15px 0px 15px;
 }
 a {
-    text-decoration: none;
+    text-decoration: underline;
 }
-a:hover {
-    background-color: #33B890;
+a:hover, .card a:hover {
+    background-color: darkblue;
     color:aliceblue;
 }
 nav {
-    background-color:#694FCC;
+    background-color:black;
     position: sticky;
     top: 0;
     display: flex;
@@ -58,19 +58,19 @@ nav {
     border-color: #78A2D1;
 }
 nav a {
-    color: #8880D7;
+    color: white;
     text-decoration: none;
     margin-right: 10px;
 }
-nav a:visited {
-    color: #1D137D;
+nav a:visited, footer a:visited {
+    color: lightblue;
 }
-nav a:hover {
+nav a:hover, footer a:hover {
     background-color:#079C6F;
     color:aliceblue;
 }
 footer{
-    background-color: #694FCC;
+    background-color: black;
     display: flex;
     justify-content: center;
     border-top-style: double;
@@ -78,18 +78,13 @@ footer{
     border-color: #78A2D1;
     padding-top:10px;
     padding-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+    width:100%
 }
 footer a {
-    color: #8880D7;
+    color: white;
     text-decoration: none;
-    
-}
-footer a:visited {
-    color: #1D137D;
-}
-footer a:hover {
-    background-color:#079C6F;
-    color:aliceblue;
 }
 p {
     padding-left:10px;
@@ -102,7 +97,7 @@ p {
     padding: 10px;
     margin-bottom: 10px;
     box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
-    background-color: #517BC3;
+    background-color: rgb(43, 43, 43);
     max-width:33vw;
     font-family: 'Dosis', sans-serif;
     text-align: center;
@@ -113,18 +108,28 @@ p {
 }
 .card h3 {
     text-align: center;
+    text-shadow: 0.5px 0.5px 0.5px white;
+    color: #6192C9;
 }
 .card ul{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    color:#004a8f;
+    color: lightgrey;
     list-style-position: inside;
     
 }
 .card dl {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    border: solid;
+    border-width: 1px 1px 1px 1px;
+    gap: 1rem;
+    text-align: center;
+    border-color:#1D137D;
+}
+.card .about {
+    grid-template-columns: 1fr;
     border: solid;
     border-width: 1px 1px 1px 1px;
     gap: 1rem;
@@ -139,7 +144,16 @@ p {
 .card dd{
     margin: 0;
     padding: 2px 4px;
-    color:#004a8f;
+    color:#6192C9;
+}
+.card p{
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    color: white;
+}
+.card a {
+    text-decoration: underline;
+    color: #6192C9;
 }
 .three-col {
     display: grid;
@@ -160,6 +174,7 @@ input[type=submit] {
 }
 label {
     font-family: 'Geologica', sans-serif;
+    color: white;
 }
 .one-col {
     display:grid;
